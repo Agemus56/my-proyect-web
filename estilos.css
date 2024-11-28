@@ -1,0 +1,64 @@
+* {
+    box-sizing: content-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(176, 24, 210),rgb(237, 67, 67)); 
+    margin: 40px;
+}
+
+h1 {text-align: center;}
+
+.perfil {
+    max-width: 200px; 
+    border: 15px solid bisque; 
+    box-shadow: 10px 10px 10px black;
+}
+
+h2 {color: yellow;}
+h3 {color: yellowgreen;}
+
+input [type="text"], [type="email"] {
+    min-width: 20px; 
+    min-height: 30px; 
+    margin-bottom: 10px; 
+    border-radius: 10px; 
+    border: 5px white; 
+    box-shadow: 10px 10px 10px purple;
+}
+
+/*sesion 09*/
+
+.button {
+    background-color: blue; 
+    padding: 15px 32px; 
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 20%; 
+    box-shadow: 10px 10px 10px;
+}
+
+.button:hover {
+    border: #555 2px solid;
+    box-shadow: 5px 5px 5px #555;
+    font-size: 20px;
+    color: red;
+}
+
+table { 
+    border-collapse: collapse; 
+    width: 100%;
+    background-color: gray; 
+} 
+    td, th { 
+        border: 1px solid black; 
+        text-align: left; 
+        padding: 8px; 
+    }
+
+    
