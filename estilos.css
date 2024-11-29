@@ -67,35 +67,35 @@ table {
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-    grid-area: "encabezado";
+    grid-area: header;
 }
 .nav {
     background-color: blue;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-    grid-area: "menu";
+    grid-area: nav;
 }
 .main {
     background-color: pink;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-    grid-area: "contenido";
+    grid-area: main;
 }
 .aside {
     background-color: palevioletred;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-    grid-area: "submenu";
+    grid-area: aside;
 }
 .footer {
     background-color: greenyellow;
     text-align: center;
     border-radius: 10px;
     padding: 1rem;
-    grid-area: "pie";
+    grid-area: footer;
 }
 
 /*CSS GRIP*/
@@ -104,21 +104,25 @@ table {
     display: grid;
     gap: 2px;
     grid-template:
-    "encabezado" 100px
-    "menu" 20px
-    "contenido" auto 
-    "submenu" 100px
-    "pie" 50px;
+    "header" 100px
+    "nav" 20px
+    "main" auto 
+    "aside" 100px
+    "footer" 50px;
 
 
     @media (min-width: 768px) {
         grid-template:
-        "encabezado  encabezado  encabezado" 100px
-        "menu  menu  menu" 50px
-        "contenido  contenido  sub menu" auto
-        "pie  pie  pie" 20px/auto auto auto;
+        "main  main  aside" auto
+        "header  header  header" 100px
+        "nav  nav  nav" 50px
+        "footer  footer  footer" 20px/auto auto auto;
     }
     @media (min-width: 1024px) {
-        
+        grid-template: 
+        "header header header header header "
+        "nav main main main aside "
+        "footer footer footer footer footer "
+     
     }
 }
