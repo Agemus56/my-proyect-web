@@ -21,7 +21,7 @@ h1 {text-align: center;}
 h2 {color: yellow;}
 h3 {color: yellowgreen;}
 
-input [type="text"], [type="email"] {
+input [type="text"], [type="email"], [type="number"] {
     min-width: 20px; 
     min-height: 30px; 
     margin-bottom: 10px; 
